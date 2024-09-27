@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Coursers } from '../models/coursers';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-cousers-bar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './cousers-bar.component.html',
   styleUrl: './cousers-bar.component.css'
 })

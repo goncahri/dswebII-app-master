@@ -1,1 +1,11 @@
-<p>cousers-bar works!</p>
+<div *ngFor="let coursers of categories" class="card" style="width: 18rem;">
+  <div>
+    <img src="{{coursers.image}}" alt="user-image2">
+  </div>
+
+  <div>
+    <span>{{coursers.title}}</span>
+  </div>
+  
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
