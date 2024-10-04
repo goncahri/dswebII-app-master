@@ -1,11 +1,14 @@
-<div *ngFor="let coursers of categories" class="card" style="width: 18rem;">
-  <div>
-    <img src="{{coursers.image}}" alt="user-image2">
+<div class="container-fluid">
+<div class="row">
+  <div class="col-3 card-content" *ngFor="let course of categories2">
+    <div class="card" style="width: 18rem;">
+      <img src="{{course.image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{course.title}}</h5>
+        <p class="card-text truncated-text">{{course.description}}</p>
+        <a routerLink="/course-details" class="btn btn-primary">Saiba +</a>
+      </div>
+    </div>
   </div>
-
-  <div>
-    <span>{{coursers.title}}</span>
-  </div>
-  
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+</div>
+</div>

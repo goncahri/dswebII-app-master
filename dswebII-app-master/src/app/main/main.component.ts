@@ -3,11 +3,12 @@ import { HeaderComponent } from '../header/header.component';
 import { NavBarComponent } from "../nav-bar/nav-bar.component";
 import { CategoryBarComponent } from "../category-bar/category-bar.component";
 import { CousersBarComponent } from "../cousers-bar/cousers-bar.component";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [HeaderComponent, NavBarComponent, CategoryBarComponent, CousersBarComponent],
+  imports: [HeaderComponent, NavBarComponent, CategoryBarComponent, CousersBarComponent, RouterOutlet],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
